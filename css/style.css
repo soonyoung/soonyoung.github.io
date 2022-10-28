@@ -1,20 +1,17 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: consolas;
 }
-body
-{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #232323;
 }
-span
-{
+span {
     position: relative;
     display: inline-block;
     width: 80px;
@@ -23,15 +20,16 @@ span
     margin: 8px 4px;
     border-radius: 10px;
     background: linear-gradient(180deg, #282828, #202020);
-    box-shadow: inset -8px 0 8px rgba(0,0,0,0.15),
-    inset 0 -8px 8px rgba(0,0,0,0.25),
-    0 0 0 2px rgba(0,0,0,0.27),
-    10px 20px 25px rgba(0, 0, 0, 0.4);
-    overflow:  hidden;
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.27),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
-span::before
-{
-    content: '';
+span:last-child {
+    width: 100%;
+}
+span::before {
+    content: "";
     position: absolute;
     top: 3px;
     left: 4px;
@@ -39,18 +37,16 @@ span::before
     right: 12px;
     background: linear-gradient(90deg, #232323, #4a4a4a);
     border-radius: 10px;
-    box-shadow: -10px -10px 10px rgba(255,255,255,0.25),
-    10px 5px 10px rgba(0,0,0,0.15);
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
+        10px 5px 10px rgba(0, 0, 0, 0.15);
     border-left: 1px solid #0004;
     border-bottom: 1px solid #0004;
     border-top: 1px solid #0009;
-
 }
-span i
-{
+span i {
     position: relative;
     color: #fff;
     font-style: normal;
     font-size: 1.5em;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
 }
